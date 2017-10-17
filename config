@@ -1,0 +1,17 @@
+[default]
+log_level = 2
+
+[[http2]]
+listen = ":8443"
+server_name = ["yourhostname.1d35.starter-us-east-1.openshiftapps.com"]
+proxy_fallback = "file://var/www/html"
+pem = """
+-----BEGIN EC PRIVATE KEY-----
+MIGkAgEBBDATTre93WFWqh5phEL5e0xuTKK5GooLaDTFiMXkV0Ma2JRsZQ5lD+gB
+.....
+-----END EC PRIVATE KEY-----
+-----BEGIN CERTIFICATE-----
+MIICODCCAb2gAwIBAgIBBjAKBggqhkjOPQQDAjBYMQswCQYDVQQGEwJDTjELMAkG
+.........
+-----END CERTIFICATE-----
+"""
