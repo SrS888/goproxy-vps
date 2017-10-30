@@ -3,7 +3,7 @@ log_level = 2
 
 [[http2]]
 listen = ":8443"
-server_name = ["uhfuerf-enwfjwjef.1d35.starter-us-east-1.openshiftapps.com"]
+server_name = ["goproxy-test-588ce70b.apps.thedigitalgarage.io"]
 proxy_fallback = "file://var/www/html"
 pem = """
 -----BEGIN RSA PRIVATE KEY-----
