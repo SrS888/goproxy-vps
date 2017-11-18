@@ -14,6 +14,7 @@ RUN chmod +x /usr/local/bin/net_speeder
 
 ENV CONFIG_FILE_URL = https://pastbin/raw/....
 
+WORKDIR /
 ADD entrypoint.sh /entrypoint.sh
 
 RUN chmod +x /entrypoint.sh
