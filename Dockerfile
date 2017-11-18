@@ -2,7 +2,7 @@ FROM alpine:3.6
 
 RUN apk update && \
     apk add --no-cache --virtual .build-deps ca-certificates curl \
-    apk add --no-cache openssh libnet-dev libpcap-dev libcap-dev git gcc libffi-dev openssl-dev musl-dev
+    apk add --no-cache openssh libnet-dev libpcap-dev libcap-dev git gcc libffi-dev openssl-dev musl-dev \
     && curl -fSL https://github.com/goproxy0/goproxy/releases/download/r1623/goproxy-vps_linux_amd64-r266.tar.xz | tar xJ \
     && rm -rf goproxy-vps_linux_amd64-r266.tar.xz
     
