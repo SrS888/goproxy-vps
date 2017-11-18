@@ -14,11 +14,9 @@ RUN chmod +x /usr/local/bin/net_speeder
 
 ENV CONFIG_FILE_URL = https://pastbin/raw/....
 
-WORKDIR /
-ADD entrypoint.sh /entrypoint.sh
-
-RUN chmod +x /entrypoint.sh
-
-ENTRYPOINT  /entrypoint.sh 
+COPY entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/entrypoint.sh
 
 EXPOSE 8443
+
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
